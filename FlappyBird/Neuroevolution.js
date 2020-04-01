@@ -373,8 +373,8 @@ var Neuroevolution = function (options) {
 						self.options.mutationRange;
 					}
 					if(document.getElementById("MutacionModificada").checked){
-						var nuevoPeso = this.operadorMutacion(data.network.weights[i]);
-						data.network.weights[i] += nuevoPeso *
+						var valor = this.operadorMutacion(data.network.weights[i]);
+						data.network.weights[i] += valor *
 						self.options.mutationRange *
 						2 -
 						self.options.mutationRange;
@@ -388,10 +388,9 @@ var Neuroevolution = function (options) {
 	
 	Generation.prototype.operadorMutacion = function (valor){
 		var aleatorio = Math.random();
-		//var resultado = Math.sin(Math.PI * aleatorio); //<--- Jesucristo (mas o menos)
+		var resultado = Math.sin(Math.PI * aleatorio); //<--- Jesucristo (mas o menos)
 		//var resultado = (Math.log(Math.sin(Math.PI * aleatorio)) / 4) + 1; //<--- Tiene buena pinta
 		//var resultado = Math.pow(Math.E, -8 * Math.pow(aleatorio - 0.5, 2));
-		var resultado = Math.log(aleatorio+1)+0.3065*aleatorio;
 		return resultado;
 	}
 
