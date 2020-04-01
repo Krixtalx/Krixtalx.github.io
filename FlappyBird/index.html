@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NeuroEvolution : Flappy Bird</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<canvas id="flappy" width="500" height="512"></canvas> <br/>
+	<button onclick="speed(60)">x1</button> 
+	<button onclick="speed(120)">x2</button> 
+	<button onclick="speed(180)">x3</button> 
+	<button onclick="speed(300)">x5</button> 
+	<button onclick="speed(0)">MAX</button>
+	<br/>
+	<input type = "radio" id="cruceDefecto" name="Cruce" checked> Cruce por defecto
+	<input type = "radio" id="cruceModificado" name="Cruce"> Cruce modificado
+	<br/>
+	<input type = "radio" id="MutacionDefecto" name="Mutacion" checked> Mutacion por defecto
+	<input type = "radio" id="MutacionModificada" name="Mutacion"> Mutacion modificada
+	<br/>
+	<button onclick="gameStart()"> Comenzar </button>
+	<script src = "Neuroevolution.js"></script>
+	<script src = "game.js"></script>
+</body>
+</html>
