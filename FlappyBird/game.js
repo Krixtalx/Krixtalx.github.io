@@ -25,8 +25,9 @@
 var Neuvol;
 var game;
 var FPS = 60;
-var maxScore=0;
-
+var maxScore = 0;
+var generaciones = new Array();
+var maxScores = new Array();
 var images = {};
 
 var speed = function(fps){
@@ -125,7 +126,7 @@ var Game = function(){
 	this.pipes = [];
 	this.birds = [];
 	this.score = 0;
-	this.canvas = document.querySelector("#flappy");
+	this.canvas = document.getElementById("flappy");
 	this.ctx = this.canvas.getContext("2d");
 	this.width = this.canvas.width;
 	this.height = this.canvas.height;
@@ -155,11 +156,26 @@ Game.prototype.start = function(){
 }
 
 Game.prototype.update = function(){
+	if(document.getElementById("contador").value<=0){
+		var sumaGen=0;
+		var sumaScore=0;
+		for(var i in generaciones){
+			sumaGen+=generaciones[i];
+			sumaScore+=maxScores[i];
+		}
+		window.alert("Ha finalizado la ejecucion con resultados: \n Gen: " + sumaGen/generaciones.length + "\n maxScore: "+ sumaScore/generaciones.length);
+		location.reload();
+		return;
+	}
 	
 	if(this.generation>=25||this.score >= 10000){
-		window.alert("Ha finalizado la ejecución con resultados: \n Gen: " + this.generation + "\n maxScore: "+ this.maxScore);
-		location.reload();
-		return true;
+		document.getElementById("contador").value--;
+		generaciones.push(this.generation);
+		maxScores.push(this.score);
+		this.score=0;
+		this.generation=0;
+		gameStart();
+		return;
 	}
 	
 	this.backgroundx += this.backgroundSpeed;
@@ -283,35 +299,7 @@ Game.prototype.display = function(){
 		self.display();
 	});
 }
-/*
-window.onload = function(){
-	var sprites = {
-		bird:"./img/bird.png",
-		background:"./img/background.png",
-		pipetop:"./img/pipetop.png",
-		pipebottom:"./img/pipebottom.png"
-	}
 
-	var start = function(){
-		Neuvol = new Neuroevolution({
-			population:50,
-			network:[2, [2], 1],
-		});
-		game = new Game();
-		game.start();
-		game.update();
-		game.display();
-		this.speed(0);
-	}
-
-
-	loadImages(sprites, function(imgs){
-		images = imgs;
-		start();
-	})
-
-}
-*/
 gameStart = function(){
 		var sprites = {
 		bird:"./img/bird.png",
@@ -319,12 +307,14 @@ gameStart = function(){
 		pipetop:"./img/pipetop.png",
 		pipebottom:"./img/pipebottom.png"
 	}
-
+	
 	var start = function(){
+		delete Neuvol;
 		Neuvol = new Neuroevolution({
 			population:50,
 			network:[2, [2], 1],
 		});
+		delete game;
 		game = new Game();
 		game.start();
 		game.update();
@@ -338,3 +328,4 @@ gameStart = function(){
 		start();
 	})
 }
+
