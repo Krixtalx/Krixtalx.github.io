@@ -4,26 +4,44 @@
 	<title>NeuroEvolution : Flappy Bird</title>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" media="screen">
+	<script src="js/math.js"></script>
+    <script src="js/plexus.js"></script>
 </head>
 <body>
-	<canvas id="flappy" width="500" height="512"></canvas> <br/>
-	<button onclick="speed(60)">x1</button> 
-	<button onclick="speed(120)">x2</button> 
-	<button onclick="speed(180)">x3</button> 
-	<button onclick="speed(300)">x5</button> 
-	<button onclick="speed(0)">MAX</button>
-	<br/>
-	<input type = "radio" id="cruceDefecto" name="Cruce"> Cruce por defecto
-	<input type = "radio" id="cruceModificado" name="Cruce" checked> Cruce modificado
-	<br/>
-	<input type = "radio" id="MutacionDefecto" name="Mutacion"> Mutacion por defecto
-	<input type = "radio" id="MutacionModificada" name="Mutacion" checked> Mutacion modificada
-	<br/>
-	 Numero de tests: <input type = "number" id="contador" min=1 max=200 value = 5>
-	<br/>
-	 Ver todos los resultados: <input type = "checkbox" id = "individuales">
-	<br/>
-	<button onclick="gameStart()"> Comenzar </button>
+	<div class="controls2">
+		<canvas id="flappy" width="500" height="512"></canvas> <br/>
+		<button onclick="speed(60)">x1</button> 
+		<button onclick="speed(120)">x2</button> 
+		<button onclick="speed(180)">x3</button> 
+		<button onclick="speed(300)">x5</button> 
+		<button onclick="speed(0)">MAX</button>
+		<br/>
+		<input type = "radio" id="cruceDefecto" name="Cruce"> Cruce por defecto
+		<input type = "radio" id="cruceModificado" name="Cruce" checked> Cruce modificado
+		<br/>
+		<input type = "radio" id="MutacionDefecto" name="Mutacion"> Mutacion por defecto
+		<input type = "radio" id="MutacionModificada" name="Mutacion" checked> Mutacion modificada
+		<br/>
+		 Numero de tests: <input type = "number" id="contador" min=1 max=200 value = 5>
+		<br/>
+		 Ver todos los resultados: <input type = "checkbox" id = "individuales">
+		<br/>
+		<button onclick="gameStart()"> Comenzar </button>
+	</div>
+	<div class="fullscreen">
+    <canvas id="plexus-test" class="plexus"></canvas>
+</div>
+
+
+<script>
+    var plexus = new Plexus("plexus-test", {
+        pointsSpeed: 1.2,
+        pointsRadius: 3.0,
+        pointsStartDistance: 70
+    });
+    var controls = new Controls("plexus-control", plexus);
+    var cursor = new Cursor(plexus, {pointsSpeed: 3.0});
+</script>
 	<script src = "Neuroevolution.js"></script>
 	<script src = "game.js"></script>
 </body>
