@@ -373,7 +373,9 @@ var Neuroevolution = function (options) {
 						self.options.mutationRange;
 					}
 					if(document.getElementById("MutacionModificada").checked){
-						var valor = this.operadorMutacion();
+						var valor = this.operadorMutacion(data.network.weights[i]);
+						console.log("valor=" + valor + "\n" /*+
+									"sum=" + (valor * self.options.mutationRange * 2 - self.options.mutationRange)*/);
 						data.network.weights[i] += valor *
 						self.options.mutationRange *
 						2 -
@@ -386,16 +388,22 @@ var Neuroevolution = function (options) {
 		return datas;
 	}
 	
-	Generation.prototype.operadorMutacion = function (){
-		var aleatorio = Math.round(Math.random()*10)/10;
+	Generation.prototype.operadorMutacion = function (valor){
+		var aleatorio = Math.random();
 		var resultado = Math.sin(Math.PI * aleatorio); //<--- Jesucristo (mas o menos)
 		//var resultado = (Math.log(Math.sin(Math.PI * aleatorio)) / 4) + 1; //<--- Tiene buena pinta
 		//var resultado = Math.pow(Math.E, -8 * Math.pow(aleatorio - 0.5, 2));
 		/*if(aleatorio < 0.5){
-			resultado = Math.sqrt((aleatorio - 0.5) / 2) + 0.5;
+			resultado = Math.sqrt(aleatorio / 2);
 		}else{
-			resultado = -1 * Math.sqrt(((-1 * aleatorio) + 0.5) / 2) + 0.5;
+			resultado = -1 * Math.sqrt(((-1 * aleatorio) + 1) / 2) + 1;
 		}*/
+		//var resultado = Math.pow(Math.E, -8 * Math.pow(aleatorio, 2));
+		//var resultado = Math.pow(Math.E, -1 * Math.pow(2 * aleatorio, 8));
+		//console.log("aleatorio=" + aleatorio + "	resultado=" + resultado);
+		resultado *= 10;
+		resultado = Math.round(resultado);
+		resultado /= 10;
 		return resultado;
 	}
 

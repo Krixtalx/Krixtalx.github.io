@@ -163,6 +163,11 @@ Game.prototype.update = function(){
 			sumaGen+=generaciones[i];
 			sumaScore+=maxScores[i];
 		}
+		if(document.getElementById("individuales").checked){
+			for(var i in generaciones){
+				window.alert("Ejecucion " + i +": \n Gen: " + generaciones[i] + "\n maxScore: "+ maxScores[i]);
+			}
+		}
 		window.alert("Ha finalizado la ejecucion con resultados: \n Gen: " + sumaGen/generaciones.length + "\n maxScore: "+ sumaScore/generaciones.length);
 		location.reload();
 		return;

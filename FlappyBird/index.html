@@ -13,13 +13,15 @@
 	<button onclick="speed(300)">x5</button> 
 	<button onclick="speed(0)">MAX</button>
 	<br/>
-	<input type = "radio" id="cruceDefecto" name="Cruce" checked> Cruce por defecto
-	<input type = "radio" id="cruceModificado" name="Cruce"> Cruce modificado
+	<input type = "radio" id="cruceDefecto" name="Cruce"> Cruce por defecto
+	<input type = "radio" id="cruceModificado" name="Cruce" checked> Cruce modificado
 	<br/>
-	<input type = "radio" id="MutacionDefecto" name="Mutacion" checked> Mutacion por defecto
-	<input type = "radio" id="MutacionModificada" name="Mutacion"> Mutacion modificada
+	<input type = "radio" id="MutacionDefecto" name="Mutacion"> Mutacion por defecto
+	<input type = "radio" id="MutacionModificada" name="Mutacion" checked> Mutacion modificada
 	<br/>
-	 Numero de tests: <input type = "number" id="contador" min=5 max=10000 value = 5>
+	 Numero de tests: <input type = "number" id="contador" min=1 max=200 value = 5>
+	<br/>
+	 Ver todos los resultados: <input type = "checkbox" id = "individuales">
 	<br/>
 	<button onclick="gameStart()"> Comenzar </button>
 	<script src = "Neuroevolution.js"></script>
