@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Index</title>
+
+    <!--<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" media="screen">-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic&subset=latin,latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+
+    <script src="js/math.js"></script>
+    <script src="js/plexus.js"></script>
+
+</head>
+
+<body>
+<div class="controls" id="plexus-control">
+   	<a href=./MundosVirtuales/index.html> Mundos virtuales </a>
+	<br/>
+	<a href=./FlappyBird/index.html> Flappy bird </a>
+</div>
+
+<div class="fullscreen">
+    <canvas id="plexus-test" class="plexus"></canvas>
+</div>
+
+
+<script>
+    var plexus = new Plexus("plexus-test", {
+        pointsSpeed: 1.2,
+        pointsRadius: 3.0,
+        pointsStartDistance: 70
+    });
+    var controls = new Controls("plexus-control", plexus);
+    var cursor = new Cursor(plexus, {pointsSpeed: 3.0});
+</script>
+
+</body>
+</html>
