@@ -1,60 +1,94 @@
-# Portfolio Website.
-Web Portfolio to showcase projects and skills in better manner. 
+<div align="center">
 
-**If you enjoy this project, please consider [supporting me](https://www.paypal.me/vinaysomawat) to continue developing and maintaining it.**
+  # Chirpy Jekyll Theme
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/vinaysomawat)
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
-###### https://vinaysomawat.github.io/
+  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
+  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
+  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
+  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-![Image](https://github.com/vinaysomawat/vinaysomawat.github.io/blob/master/vinaysomawatgithubio.gif)
-### About me
-* Competitive Programming Page
-* Web Designing Page
-* Software Development Page
-* Android Application Page
-* Technical Writing Page
-* Machine Learning Page
-* Open Source Page
+  [**Live Demo →**][demo]
 
-### Hire Me banner
-### Skills
-* Skills with progress bar
-### Education
-* Undergrad
-* Intermediate
-### Work Experience
-### Contact
-* Mail Address
-* Location
+  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
 
-### Footer
-------------------------------------------------------------------
-#### To use the template on your github:
+</div>
 
-1. Click on `Fork`
-2. Rename your repo `yourgithubpseudo.github.io`
-3. Clone your fork `git clone https://github.com/yourgithubpseudo/yourgithubpseudo.github.io.git`
-4. Modify the `.html` files.
+## Features
 
-#### To setup the project and contribute on your local machine:
+<details>
+  <summary>
+    <i>Click to view features</i>
+  </summary>
+  <p>
 
-1. Click on `Fork`.
-2. Go to your fork and `clone` the project to your local machine.
-3. `git clone https://github.com/yourgithubpseudo/vinaysomawat.github.io.git`
+  - Dark / Light Theme Mode
+  - Localized UI language
+  - Pinned Posts
+  - Hierarchical Categories
+  - Trending Tags
+  - Table of Contents
+  - Last Modified Date of Posts
+  - Syntax Highlighting
+  - Mathematical Expressions
+  - Mermaid Diagram & Flowchart
+  - Dark / Light Mode Images
+  - Embed Videos
+  - Disqus / Utterances / Giscus Comments
+  - Search
+  - Atom Feeds
+  - Google Analytics
+  - SEO & Performance Optimization
 
-#### To contribute to the project:
+  </p>
+</details>
 
-1. Choose any open issue from [here](https://github.com/vinaysomawat/vinaysomawat.github.io/issues). 
-2. Comment on the issue: `Can I work on this?` and get assigned.
-3. Make changes to your fork and send a PR.
+## Documentation
 
-#### To create a PR:
+To explore usage, development, and upgrade guide of the project, please refer to
+the [Wiki][wiki].
 
-Follow the given link to make a successful and valid PR: https://help.github.com/articles/creating-a-pull-request/
+## Contributing
 
-#### To send a PR, follow these rules carefully,   **otherwise your PR will be closed**:
+Welcome to report bugs, help improve the code or submit new features.
+For more information, please see the ["Contributing Guidelines"][contribute-guide].
 
-1. Make PR title in this format: `Fixes #IssueNo : Name of Issue`
+## Credits
 
-For any doubts related to the issues, i.e., to understand the issue better etc, comment down your queries on the respective issue.
+This theme is mainly built with [Jekyll][jekyllrb] ecosystem,
+[Bootstrap][bootstrap], [Font Awesome][icons] and some other [wonderful tools][lib].
+The avatar and favicon design come from [Clipart Max][image].
+
+Thanks to all the [contributors][contributors]. Also, folks who submitted issues
+or unmerged PRs should not be forgotten. Because they reported bugs, shared ideas,
+or inspired me to write more readable documentation.
+
+Last but not least, thanks to [JetBrains][jetbrains] for providing the
+_Open Source Development_ license.
+
+## Sponsoring
+
+If you'd like to sponsor this project, the following options are available.
+
+[![Ko-fi](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/coteschung)
+[![Wechat Pay](https://img.shields.io/badge/-Tip%20Me%20on%20WeChat-brightgreen?logo=wechat&logoColor=white)][donation]
+[![Alipay](https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&logoColor=white)][donation]
+
+## License
+
+This work is published under [MIT][mit] License.
+
+[jekyllrb]: https://jekyllrb.com/
+[bootstrap]: https://getbootstrap.com/
+[icons]: https://fontawesome.com/
+[image]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
+[demo]: https://cotes2020.github.io/chirpy-demo/
+[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/CONTRIBUTING.md
+[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
+[lib]: https://github.com/cotes2020/chirpy-static-assets
+[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+[donation]: https://sponsor.cotes.page/
+[mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
