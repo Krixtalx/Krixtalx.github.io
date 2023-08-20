@@ -18,7 +18,7 @@ timezone: Europe/Madrid
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: What Coulda Been a Render # the main title
+title: What Coulda Been a Renderer # the main title
 
 tagline: A personal blog focused on development failure and progress # it will display as the sub-title
 
