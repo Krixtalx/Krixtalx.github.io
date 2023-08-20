@@ -7,5 +7,5 @@ tags: [Graphics, Vulkan, Goals]
 toc: true
 img_path: "/assets/img/Posts/The journey to Vulkan"
 image: 
-    path: "Vulkan_logo.png"
+    path: "Vulkan_Logo.png"
 ---
