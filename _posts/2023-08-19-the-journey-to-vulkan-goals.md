@@ -50,13 +50,13 @@ On the other hand, one thing that will differ from my previous project is the bu
 
 ## Learning resources
 
-There's fewer learning resources for *Vulkan* than for *OpenGL*. But, on the other hand, they focus in newer techniques and it's easier to find resources for things like GPU driven rendering. 
+There's fewer learning resources for *Vulkan* than for *OpenGL*. But, on the other hand, they focus in newer techniques and it's easier to find resources for things like *GPU driven rendering*. 
 
 I have already done some *workshops* oriented to learn the basics of *Vulkan*, like the one from [Johannes Unterguggenberger](https://www.cg.tuwien.ac.at/staff/JohannesUnterguggenberger.html), [VulkanWorkshop](https://github.com/cg-tuwien/VulkanWorkshop). This one is pretty good in teaching the very basics till part 4, where explanation videos aren't available and you get lost a lot of the time in the inmensity of code. 
 
 So, as i don't thing that i trully dominates the basics, i'll start from scratch with [vkguide.dev](https://vkguide.dev/) adapting the concepts there explained to my own custom implementation (which could not be a good idea but...). This page is less dense than others tutorials like [vulkan-tutorial](https://vulkan-tutorial.com/) or the [Khronos' official guide](https://github.com/KhronosGroup/Vulkan-Guide) while explain all the basic concepts you need. In any case i need a more detailed explaination, i can always refer to these others resources. 
 
-The nice part of the tutorial choosen is that it covers from the very basics to some more advances topics like multithreading the renderer or GPU driven rendering, some topics i'm willing to learn.
+The nice part of the tutorial choosen is that it covers from the very basics to some more advances topics like multithreading the renderer or *GPU driven rendering*, some topics i'm willing to learn.
 
 In addition to the previous tutorials, there's another pair of learning source in form of samples: [SaschaWillems/Vulkan](https://github.com/SaschaWillems/Vulkan) and [KhronosGroup/Vulkan-Samples](https://github.com/KhronosGroup/Vulkan-Samples).
 
@@ -81,6 +81,8 @@ I would like to keep low the number of dependencies, so i will mostly use indisp
 - [ ] Learn about the advantages Vulkan offers to multithreading and implement it in the renderer.
 
 - [ ] Explore ECS paradigm and advantages that it could have in having a DOD.
+
+- [ ] Include GLTF support.
 
 - [ ] Study about *Mesh shader* use cases and try to include it in the renderer. 
 
