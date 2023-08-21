@@ -70,6 +70,8 @@ I would like to keep low the number of dependencies, so i will mostly use indisp
 
 - **Dear ImGUI**: There isn't discusion here. 
 
+- **Vulkan HPP**: C++ binding of Vulkan C API. I find the code cleaner using this API instead of the C one.
+
 - **Vulkan Memory Allocator**: Not mandatory but quite convenient to suffer a little less with *Vulkan* memory management.
 
 - **VK Bootstrap**: The most dispensable one. It makes an abstract layer over all the boilerplate that Vulkan has on initialization. I have already suffer part of it while doing the mentioned workshop, so I prefer keeping it away for now. 
