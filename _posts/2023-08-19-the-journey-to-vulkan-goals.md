@@ -46,7 +46,9 @@ This is the language I have most experience with and will be the choosen for thi
 
 Visual Studio. That's it. There's others alternatives like *CLion* or *10XEditor*, but neither of them are free or offers a huge advantage over VS. 
 
-On the other hand, one thing that will differ from my previous project is the build system I'm gonna use. Instead of Visual Studio native system, I will use *Cmake*. I have never understood it (I find Visual Studio system simplier), but practically everyone in the industry uses it, so i'll give it a try in a bigger project. 
+~~On the other hand, one thing that will differ from my previous project is the build system I'm gonna use. Instead of Visual Studio native system, I will use *Cmake*. I have never understood it (I find Visual Studio system simplier), but practically everyone in the industry uses it, so i'll give it a try in a bigger project.~~
+
+I desist on trying to use Cmake, a day trying to make it work and I'm just where i started. Instead of taking a *cmakelist* from somewhere, I will keep with Visual Studio solutions system for now. 
 
 ## Learning resources
 
